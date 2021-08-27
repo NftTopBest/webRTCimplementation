@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>WebRTC Demo</title>
+  </head>
+  <body>
+    <h1>P2P Room v0.2</h1>
+    <div class="videos">
+      <span>
+        <h3>YOU / Local Stream</h3>
+        <video id="webcamVideo" autoplay playsinline></video>
+      </span>
+      <span>
+        <h3>Peer/Remote Stream</h3>
+        <video id="remoteVideo" autoplay playsinline></video>
+      </span>
+    </div>
+
+    <button id="webcamButton">Start Camera</button>
+    <h2>Enter Room Key</h2>
+    <button id="callButton" disabled>Generate Offer</button>
+    <input id="callInput" />
+    <button id="answerButton" disabled>Answer</button>
+    <h2>Chat</h2>
+    <textarea id="chatTextArea" rows="7" cols="50" readonly></textarea>
+    <h3>Chat Input</h3>
+    <input id="chatInput" />
+    <button id="chatButton" disabled>Send</button>
+    <h2>Hangup</h2>
+
+    <button id="hangupButton" disabled>Hangup</button>
+
+    <script type="module" src="/main.js"></script>
+  </body>
+</html>
